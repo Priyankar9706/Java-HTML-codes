@@ -1,0 +1,2 @@
+DELETE from my_employee
+where first_name like '%man%' OR last_name LIKE '%man%';

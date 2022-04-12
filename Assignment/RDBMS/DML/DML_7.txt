@@ -1,0 +1,3 @@
+UPDATE my_employee
+SET salary=1.1*salary
+Where department_id=90;

@@ -1,0 +1,3 @@
+create table MY_EMPLOYEE AS 
+SELECT employee_id,first_name,last_name,department_id,salary from employees
+where 1=2;

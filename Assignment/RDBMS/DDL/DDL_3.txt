@@ -1,0 +1,12 @@
+Create TABLE EMP(
+    ID Number(7) PRIMARY KEY,
+    LAST_NAME VARCHAR2(25) NOT NULL,
+    FIRST_NAME VARCHAR2(25),
+    DEPT_ID NUMBER(7),
+    FOREIGN KEY(DEPT_ID) REFERENCES Dept(DEPT_ID)
+    
+);
+INSERT INTO EMP VALUES(101,'Sam','Sundar',10);
+/*INSERT INTO EMP VALUES(101,'Ram','Krishna',20); has error due to PK*/
+INSERT INTO EMP VALUES(102,'Gopi',null,40);
+/*INSERT INTO EMP VALUES(103,null,null,20); has error as last_name cannot be null*/
